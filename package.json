@@ -36,7 +36,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "CI=true npm test"
+      "pre-push": "($env:CI = 'true') -and (npm test)"
     }
   },
   "eslintConfig": {
